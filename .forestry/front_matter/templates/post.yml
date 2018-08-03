@@ -25,5 +25,10 @@ fields:
     for this post in other languages.
   config:
     required: true
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+  default: post
 pages:
 - en/_posts/test.md
