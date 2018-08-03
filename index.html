@@ -1,0 +1,18 @@
+---
+layout: home
+title: Home
+---
+
+<h1>Select Your Language</h1>
+{% for lang in site.data.languages %}
+  {% assign langCode = lang[0] %}
+  {% if langCode == 'en' %}{% continue %}{% endif %}
+  <em>{{ site.data.translations.selectLang[langCode] }}</em><br />
+{% endfor %}
+
+<ul class="languages">
+{% for lang in site.data.languages %}
+{% assign language = lang[1] %}
+<li><a href="{{site.baseurl}}{{lang[0]}}">{{language.icon}} {{ language.label }} ({{ language.code }})</a></li>
+{% endfor %}
+</ul>
