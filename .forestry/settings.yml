@@ -5,20 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: en
-  label: English - Pages
-  create: all
-  match: "*"
-- type: directory
   path: en/_posts
   label: English - Posts
   create: all
   match: "**/*"
-- type: directory
-  path: es
-  label: Español - Pages
-  create: all
-  match: "*"
 - type: directory
   path: es/_posts
   label: Español - Posts
