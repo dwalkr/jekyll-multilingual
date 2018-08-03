@@ -1,0 +1,27 @@
+---
+label: Post
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: date
+  label: Date
+- type: text
+  name: title
+  label: Title
+- type: select
+  name: lang
+  config:
+    source:
+      type: datafiles
+      file: _data-languages-yml
+    required: true
+  label: Lang
+  default: en
+- type: text
+  name: lang-ref
+  label: Lang Ref
+  description: Insert a unique identifier for this content. Insert the same value
+    for this post in other languages.
+  config:
+    required: true
