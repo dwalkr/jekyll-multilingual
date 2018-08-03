@@ -25,3 +25,5 @@ fields:
     for this post in other languages.
   config:
     required: true
+pages:
+- en/_posts/test.md
