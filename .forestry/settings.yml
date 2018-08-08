@@ -4,16 +4,30 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: English
 - type: directory
   path: en/_posts
-  label: English - Posts
+  label: Posts
   create: all
   match: "**/*"
 - type: directory
+  path: en
+  label: Pages
+  create: all
+  match: "*"
+- type: heading
+  label: Espanol
+- type: directory
   path: es/_posts
-  label: Español - Posts
+  label: Posts
   create: all
   match: "**/*"
+- type: directory
+  path: es
+  label: Pages
+  create: all
+  match: "*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
