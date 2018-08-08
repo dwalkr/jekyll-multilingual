@@ -17,7 +17,7 @@ sections:
   create: all
   match: "*"
 - type: heading
-  label: Espanol
+  label: Español
 - type: directory
   path: es/_posts
   label: Posts
