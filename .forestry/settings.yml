@@ -28,6 +28,16 @@ sections:
   label: Pages
   create: all
   match: "*"
+- type: heading
+  label: Data
+- type: document
+  path: _data/languages.yml
+  label: Languages
+  match: "**/*"
+- type: document
+  path: _data/translations.yml
+  label: Translations
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
